@@ -1,3 +1,4 @@
+import { memo } from "react";
 import type { Task } from "../model/types";
 import styles from "./TaskCard.module.css";
 
@@ -8,7 +9,7 @@ type Props = {
   removeTask: RemoveTask;
 };
 
-export function TaskCard({ task, removeTask }: Props) {
+export const TaskCard = memo (function TaskCard ({ task, removeTask }: Props) {
   return (
     <div className={styles.card}>
       {task.completed ? <>✓</> : <>✗</>}
@@ -16,4 +17,4 @@ export function TaskCard({ task, removeTask }: Props) {
       <button onClick={() => {removeTask(task.id)}}>delete</button>
     </div>
   );
-}
+})
