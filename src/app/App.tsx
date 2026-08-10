@@ -1,10 +1,10 @@
-import { TaskPage } from "../pages/tasks"
+import { RegisterPage } from "pages/register"
 
 function App() {
 
   return (
     <div>
-      <TaskPage />
+      <RegisterPage />
     </div>
   )
 }
