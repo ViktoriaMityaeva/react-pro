@@ -1,11 +1,13 @@
+import { Provider } from "react-redux"
 import { TaskPage } from "../pages/tasks"
+import { store } from "./store/store"
 
 function App() {
 
   return (
-    <div>
+    <Provider store={store}>
       <TaskPage />
-    </div>
+    </Provider>
   )
 }
 
