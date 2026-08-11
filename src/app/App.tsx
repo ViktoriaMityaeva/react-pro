@@ -1,12 +1,12 @@
 import { Provider } from "react-redux"
-import { TaskPage } from "../pages/tasks"
 import { store } from "./store/store"
+import { RegisterPage } from "pages/register"
 
 function App() {
 
   return (
     <Provider store={store}>
-      <TaskPage />
+        <RegisterPage />
     </Provider>
   )
 }
