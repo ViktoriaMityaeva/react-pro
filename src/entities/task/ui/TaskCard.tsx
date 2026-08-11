@@ -2,7 +2,7 @@ import { memo } from "react";
 import type { Task } from "../model/types";
 import styles from "./TaskCard.module.css";
 
-type RemoveTask = (taskId: string) => void;
+type RemoveTask = (taskId: number) => void;
 
 type Props = {
   task: Task;
