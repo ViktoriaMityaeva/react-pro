@@ -1,12 +1,12 @@
 import { Provider } from "react-redux"
 import { store } from "./store/store"
-import { RegisterPage } from "pages/register"
+import { RefPage } from "pages/refExample/ui/refExample"
 
 function App() {
 
   return (
     <Provider store={store}>
-        <RegisterPage />
+        <RefPage />
     </Provider>
   )
 }
