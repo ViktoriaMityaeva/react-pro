@@ -1,12 +1,17 @@
 import { Provider } from "react-redux"
 import { store } from "./store/store"
-import { RegisterPage } from "pages/register"
+import { BrowserRouter } from "react-router-dom"
+import { AppRouter, AuthProvider } from "features/authRouting"
 
 function App() {
 
   return (
     <Provider store={store}>
-        <RegisterPage />
+      <BrowserRouter>
+        <AuthProvider>
+          <AppRouter />
+        </AuthProvider>
+      </BrowserRouter>
     </Provider>
   )
 }
